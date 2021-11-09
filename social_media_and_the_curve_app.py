@@ -44,7 +44,7 @@ st.text('')
 
 day_number = st.slider("Day Number: ",1,93)
 st.text("")
-fig_file = ".\\jpeg_choropleth_" +str(day_number)+".png"
+fig_file = "jpeg_choropleth_" +str(day_number)+".png"
 fig_file = fig_file.strip()
 st.image(fig_file)
 
@@ -83,6 +83,6 @@ st.write('As a first step, lets visualize the relative frequencies of the words 
 st.write('sense of what this data looks like:')
 st.write('')
 items_select = st.selectbox('Choose Governor',["charlie_baker_ma","andrew_cuomo_ny","brad_little_id","brian_kemp_ga","chris_sununu_nh","doug_ducey_az","gavin_newsom_ca","greg_abbott_tx","gretchen_whitmer_mi","john_bel_edwards_la","phil_murphy_nj","ron_desantis_fl","steven_bullock_mt"])
-item_file = ".\\item_counts_" + str(items_select)+ ".jpeg"
+item_file = "item_counts_" + str(items_select)+ ".jpeg"
 item_file = item_file.strip()
 st.image(item_file)
