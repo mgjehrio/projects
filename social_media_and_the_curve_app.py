@@ -42,7 +42,7 @@ st.text('')
 st.text('And the following tool allows you to examine the individual changes per county on a day to day basis')
 st.text('')
 
-day_number = st.slider("Day Number: ",1,93)
+day_number = st.slider("Day Number: ",2,93)
 st.text("")
 fig_file = "jpeg_choropleth_" +str(day_number)+".png"
 fig_file = fig_file.strip()
