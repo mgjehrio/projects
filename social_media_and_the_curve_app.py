@@ -1,7 +1,7 @@
 import streamlit as st
 st.set_page_config(layout="wide")
 from PIL import Image
-st.title("Social Media and the Curve")
+st.title("Social Media and the Curve Part I")
 st.subheader('Matthew Jehrio')
 
 
@@ -81,10 +81,16 @@ st.write('')
 st.write('To this end the data needs to be preprocessed further by using word2vec. This process represents tweets')
 st.write('as numerical vectors so that the apriori algorithm can be used.')
 st.write('')
-st.write('As a first step, lets visualize the relative frequencies of the words used by the governors to get a')
-st.write('sense of what this data looks like:')
+st.write('As a first step, lets visualize the relative frequencies of the words used by some of the governors in ')
+st.write('harder hit states to get a sense of what this data looks like:')
 st.write('')
 items_select = st.selectbox('Choose Governor',["charlie_baker_ma","andrew_cuomo_ny","brad_little_id","brian_kemp_ga","chris_sununu_nh","doug_ducey_az","gavin_newsom_ca","greg_abbott_tx","gretchen_whitmer_mi","john_bel_edwards_la","phil_murphy_nj","ron_desantis_fl","steven_bullock_mt"])
 item_file = "item_counts_" + str(items_select)+ ".jpeg"
 item_file = item_file.strip()
 st.image(item_file)
+st.write('')
+st.write('As a reminder, this data analysis thus far is still exploratory in nature, so there really isnt a solid')
+st.write('basis on which to draw any conclusions about potential causality yet.')
+st.write('')
+st.write('In Part II, well look at the results of the apriori algorithm and see what, if any, conclusions can be drawn')
+st.write('from the results.')
