@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 from PIL import Image
 st.title("Social Media and the Curve")
 st.subheader('Matthew Jehrio')
