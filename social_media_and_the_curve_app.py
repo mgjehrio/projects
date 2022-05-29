@@ -40,6 +40,8 @@ st.text('')
 #st.image(".\\choropleth_2.png")
 st.image('maximum_differentials.png')
 st.text('')
+
+"""
 st.text('And the following tool allows you to examine the individual changes per county on a day to day basis. The title is')
 st.text('currently an artifact and will be fixed shortly.')
 st.text('')
@@ -49,7 +51,7 @@ st.text("")
 fig_file = "jpeg_choropleth_" +str(day_number)+".png"
 fig_file = fig_file.strip()
 st.image(fig_file)
-
+"""
 st.write('')
 st.write('Of particular note here is that While there are clusters that correspond to population centers,')
 st.write('there are counties that appear to have increased maximum daily increases in spite of population.')
