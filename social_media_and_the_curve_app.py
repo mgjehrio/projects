@@ -39,9 +39,9 @@ st.text('The following figure shows the maximum differential for each county in 
 st.text('')
 #st.image(".\\choropleth_2.png")
 st.image('maximum_differentials.png')
-st.text('')
 
 """
+st.text('')
 st.text('And the following tool allows you to examine the individual changes per county on a day to day basis. The title is')
 st.text('currently an artifact and will be fixed shortly.')
 st.text('')
