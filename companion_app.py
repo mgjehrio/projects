@@ -3,7 +3,7 @@ import base64
 
 
 st.set_page_config(page_title="Matthew Jehrio Poster App",
-    page_icon="C:\\Users\\mgjeh\\Desktop\\thesis\\figures\\poster_graphics\\central_poster_graphic.svg",
+    page_icon=".\\central_poster_graphic.svg",
     layout="wide",
     initial_sidebar_state="auto",
     menu_items=None)
@@ -11,7 +11,7 @@ st.set_page_config(page_title="Matthew Jehrio Poster App",
 
 
 
-state = st.sidebar.selectbox('Page', ['Poster', 'Paper', 'Figures'])
+state = st.sidebar.selectbox('Page', ['Poster', 'Paper'])
 
 
 def st_display_pdf(pdf_file):
@@ -24,10 +24,12 @@ def st_display_pdf(pdf_file):
 
 if state == "Poster":
 
-        st_display_pdf("C:\\Users\\mgjeh\\Downloads\\Matthew_Jehrio_Poster_1.pdf")
+        st_display_pdf(".\\Matthew_Jehrio_Poster_1.pdf")
 elif state == "Paper":
-        st_display_pdf("C:\\Users\\mgjeh\\Desktop\\thesis\\manuscript.pdf")
+        st_display_pdf(".\\manuscript.pdf")
 
+        
+"""
 if state == "Figures":
 
     # Histogram display input
@@ -50,3 +52,4 @@ if state == "Figures":
         errorbar_convert = errorbar_convert.strip()
         st.write(errorbar_convert)
         st.image(errorbar_convert)
+"""
