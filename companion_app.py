@@ -26,7 +26,7 @@ if state == "Poster":
 
         st_display_pdf("DRAFT_Matthew_Jehrio_Poster.pdf")
 elif state == "Paper":
-        st_display_pdf(".\\manuscript.pdf")
+        st_display_pdf("manuscript.pdf")
 
         
 """
