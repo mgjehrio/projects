@@ -24,7 +24,7 @@ def st_display_pdf(pdf_file):
 
 if state == "Poster":
 
-        st_display_pdf(".\\Matthew_Jehrio_Poster_1.pdf")
+        st_display_pdf(".\\DRAFT_Matthew_Jehrio_Poster.pdf")
 elif state == "Paper":
         st_display_pdf(".\\manuscript.pdf")
 
