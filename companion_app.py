@@ -19,9 +19,9 @@ def st_display_pdf(pdf_file):
 
 
 if state == "Poster":
-
-        #st_display_pdf("DRAFT_Matthew_Jehrio_Poster.pdf")
         st.markdown(pdf_display, unsafe_allow_html=True)
+        st_display_pdf("DRAFT_Matthew_Jehrio_Poster.pdf")
+        
 elif state == "Paper":
         st_display_pdf("manuscript.pdf")
 
