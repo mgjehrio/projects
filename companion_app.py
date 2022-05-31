@@ -2,11 +2,7 @@ import streamlit as st
 import base64
 
 
-st.set_page_config(page_title="Matthew Jehrio Poster App",
-    page_icon="central_poster_graphic.svg",
-    layout="wide",
-    initial_sidebar_state="auto",
-    menu_items=None)
+st.set_page_config(page_title="Matthew Jehrio Poster App")
 
 
 
